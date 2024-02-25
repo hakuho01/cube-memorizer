@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="decklist">
+    <p><%= @tournament_name %></p>
+    <h2><%= @winner_name %></h2>
+    <% @decklist.each do |card| %>
+      <div>
+        <%= card.use_quantity %>:<%= card.cardname %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+<% @winners.each do |winner| %>
+  <div class="result_frame">
+    <div class="result_date">
+      <%= @tournaments.find(winner.tournament_id).date %>&nbsp;<%= @tournaments.find(winner.tournament_id).name%>
+    </div>
+    <h2>
+      <%= @tournament_type.find(winner.tournament_type).tournament_type_ja %>キューブ
+    </h2>
+    
+    <%= winner.player_name %>
+    <%= winner.result %>
+    <%= link_to "デッキリスト", "/decklist/#{winner.id}" %>
+  </div>
+<% end %>
+
+</div>
