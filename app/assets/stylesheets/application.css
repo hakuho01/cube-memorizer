@@ -5,11 +5,24 @@ body{
 p{
   margin: 0;
 }
+.title{
+  display: flex;
+}
+.title img{
+  height:48px;
+  margin-right: 12px;
+}
 h1{
   margin: 0;
 }
 h2{
   margin: 0;
+}
+h3{
+  margin:0;
+}
+h4{
+  margin:0;
 }
 header{
   display: flex;
@@ -52,3 +65,24 @@ header nav a{
 
 /* decklist */
 
+/* stats */
+.stats h2{
+  background:rgb(60, 70, 98);
+  color: #fff;
+  padding: 6px;
+}
+.stats section{
+  margin-top:20px
+}
+.stats h3{
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 2px;
+}
+.section_inner{
+  display: flex;
+  justify-content: space-between;
+  margin-top:12px
+}
+.section_child{
+  width:30%;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CubeMemorizer</title>
+    <title>AEON SERVER CUBE PORTAL</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,7 +12,10 @@
 
   <body>
     <header>
-      <h1>イオン鯖キューブ会記録</h1>
+      <div class="title">
+        <%= image_tag 'logo.png' %>
+        <h1>AEON SERVER CUBE PORTAL</h1>
+      </div>
       <nav>
         <%= link_to "記録", "/records" %>
         <%= link_to "統計データ", "/stats" %>

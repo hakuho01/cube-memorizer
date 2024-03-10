@@ -1,0 +1,61 @@
+<div class="container stats">
+  <h2>統計情報 -Stats-</h2>
+  <section>
+    <h3>キューブ優勝回数</h3>
+    <div class="section_inner">
+      <div class="section_child">
+        <h4>ヴィンテージキューブ</h4>
+        <% @vintage_top_winners.each_with_index do |winner,index| %>
+          <div>
+            <%= index + 1 %>位:<%= winner.player_name %> <%= winner[@count_player_name] %>回 
+          </div>
+        <% end %>
+      </div>
+      <div class="section_child">
+        <h4>パウパーキューブ</h4>
+        <% @pauper_top_winners.each_with_index do |winner,index| %>
+          <div>
+          <%= index + 1 %>位:<%= winner.player_name %> <%= winner[@count_player_name] %>回 
+          </div>
+        <% end %>
+      </div>
+      <div class="section_child">
+        <h4>カスレアキューブ</h4>
+        <% @cheap_top_winners.each_with_index do |winner,index| %>
+          <div>
+          <%= index + 1 %>位:<%= winner.player_name %> <%= winner[@count_player_name] %>回 
+          </div>
+        <% end %>
+      </div>
+    </div>    
+  </section>
+  <section>
+    <h3>よく使われているカード</h3>
+    <div class="section_inner">
+      <div class="section_child">
+        <h4>ヴィンテージキューブ</h4>
+        <% @vintage_frequent_cards.each_with_index do |card,index| %>
+          <div>
+            <%= index + 1 %>位:<%= card.cardname %> <%= card[@count_card_name] %>回 
+          </div>
+        <% end %>
+      </div>
+      <div class="section_child">
+        <h4>パウパーキューブ</h4>
+        <% @pauper_frequent_cards.each_with_index do |card,index| %>
+          <div>
+            <%= index + 1 %>位:<%= card.cardname %> <%= card[@count_card_name] %>回 
+          </div>
+        <% end %>
+      </div>
+      <div class="section_child">
+        <h4>カスレアキューブ</h4>
+        <% @cheap_frequent_cards.each_with_index do |card,index| %>
+          <div>
+            <%= index + 1 %>位:<%= card.cardname %> <%= card[@count_card_name] %>回 
+          </div>
+        <% end %>
+      </div>
+    </div>    
+  </section>
+</div>

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'records/index'
   get 'records', to: 'records#index'
 
+  get 'stats/index'
+  get 'stats', to: 'stats#index'
 end
