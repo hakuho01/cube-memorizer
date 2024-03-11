@@ -33,6 +33,9 @@ header{
 }
 header h1{
   color: #fff;
+  font-family: "magistral-condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 header nav a{
   text-decoration: none;
@@ -47,6 +50,12 @@ header nav a{
 
 /* result */
 
+.records h2{
+  background:rgb(60, 70, 98);
+  color: #fff;
+  padding: 6px;
+  margin-bottom: 16px;
+}
 .result_frame{
   border: 1px solid #ccc;
   margin-bottom: 20px;
@@ -59,7 +68,7 @@ header nav a{
 .result_date{
   font-size:14px;
 }
-.result_frame h2{
+.result_frame h3{
   font-size:24px
 }
 

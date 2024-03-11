@@ -1,12 +1,13 @@
-<div class="container">
+<div class="container records">
+<h2>デッキリスト一覧</h2>
 <% @winners.each do |winner| %>
   <div class="result_frame">
     <div class="result_date">
       <%= @tournaments.find(winner.tournament_id).date %>&nbsp;<%= @tournaments.find(winner.tournament_id).name%>
     </div>
-    <h2>
+    <h3>
       <%= @tournament_type.find(winner.tournament_type).tournament_type_ja %>キューブ
-    </h2>
+    </h3>
     
     <%= winner.player_name %>
     <%= winner.result %>
