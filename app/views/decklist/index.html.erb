@@ -1,6 +1,6 @@
 <div class="container">
   <div class="decklist">
-    <p><%= @tournament_name %></p>
+    <p><%= @tournament_name %>&nbsp;<%= @tournament_type.find(@winner.tournament_type).tournament_type_ja %>キューブ</p>
     <h2><%= @winner_name %></h2>
     <% @decklist.each do |card| %>
       <div>

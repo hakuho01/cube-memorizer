@@ -7,7 +7,7 @@
         <h4>ヴィンテージキューブ</h4>
         <% @vintage_top_winners.each_with_index do |winner,index| %>
           <div>
-            <%= index + 1 %>位:<%= winner.player_name %> <%= winner[@count_player_name] %>回 
+            <%= index + 1 %>位:<%= winner.player_name %> <%= winner.count %>回 
           </div>
         <% end %>
       </div>
@@ -15,7 +15,7 @@
         <h4>パウパーキューブ</h4>
         <% @pauper_top_winners.each_with_index do |winner,index| %>
           <div>
-          <%= index + 1 %>位:<%= winner.player_name %> <%= winner[@count_player_name] %>回 
+          <%= index + 1 %>位:<%= winner.player_name %> <%= winner.count %>回 
           </div>
         <% end %>
       </div>
@@ -23,7 +23,7 @@
         <h4>カスレアキューブ</h4>
         <% @cheap_top_winners.each_with_index do |winner,index| %>
           <div>
-          <%= index + 1 %>位:<%= winner.player_name %> <%= winner[@count_player_name] %>回 
+          <%= index + 1 %>位:<%= winner.player_name %> <%= winner.count %>回 
           </div>
         <% end %>
       </div>
@@ -36,7 +36,7 @@
         <h4>ヴィンテージキューブ</h4>
         <% @vintage_frequent_cards.each_with_index do |card,index| %>
           <div>
-            <%= index + 1 %>位:<%= card.cardname %> <%= card[@count_card_name] %>回 
+            <%= index + 1 %>位:<%= card.cardname %> <%= card.count %>回 
           </div>
         <% end %>
       </div>
@@ -44,7 +44,7 @@
         <h4>パウパーキューブ</h4>
         <% @pauper_frequent_cards.each_with_index do |card,index| %>
           <div>
-            <%= index + 1 %>位:<%= card.cardname %> <%= card[@count_card_name] %>回 
+            <%= index + 1 %>位:<%= card.cardname %> <%= card.count %>回 
           </div>
         <% end %>
       </div>
@@ -52,7 +52,7 @@
         <h4>カスレアキューブ</h4>
         <% @cheap_frequent_cards.each_with_index do |card,index| %>
           <div>
-            <%= index + 1 %>位:<%= card.cardname %> <%= card[@count_card_name] %>回 
+            <%= index + 1 %>位:<%= card.cardname %> <%= card.count %>回 
           </div>
         <% end %>
       </div>

@@ -86,3 +86,36 @@ header nav a{
 .section_child{
   width:30%;
 }
+
+/* event */
+.event h2{
+  background:rgb(60, 70, 98);
+  color: #fff;
+  padding: 6px;
+  margin-bottom: 16px;
+}
+.event .event_frame{
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 18px;
+}
+.event .event_frame:last-child{
+  margin-bottom: 0;
+}
+.event_show dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event_show dt{
+  width: 200px;
+  font-size:18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.event_show dd{
+  width: calc(100% - 200px);
+  font-size: 18px;
+  margin-left: 0;
+  margin-bottom: 8px;
+}

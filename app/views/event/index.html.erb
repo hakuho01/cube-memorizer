@@ -1,0 +1,9 @@
+<div class="container event">
+<h2>過去イベント一覧</h2>
+<% @tournaments.each do |tournament| %>
+  <div class="event_frame">
+    <%= tournament.date %>
+    <h3><a href ="/event/<%= tournament.id %>"><%= tournament.name %>キューブ会</a></h3>
+  </div>
+<% end %>
+</div>

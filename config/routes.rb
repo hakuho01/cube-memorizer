@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'event/index'
+  get 'event', to: 'event#index'
+  get 'event/:id', to: 'event#show'
+
   get 'decklist/index'
   get 'decklist/:id', to: 'decklist#index'
 

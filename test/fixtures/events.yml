@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2024-03-11
+  place: MyString
+  member: MyString
+  tournament: MyString
+  winner_list: MyString
+  remarks: MyString
+
+two:
+  date: 2024-03-11
+  place: MyString
+  member: MyString
+  tournament: MyString
+  winner_list: MyString
+  remarks: MyString
