@@ -5,7 +5,6 @@ class EventController < ApplicationController
 
   def show
     @tournament_id = params[:id]
-    @event = Event.find_by(tournament_id: @tournament_id)
     @tournament = Tournament.find(@tournament_id)
     @winners = Winner.where(tournament_id: @tournament_id)
     @tournament_type = TournamentType.all

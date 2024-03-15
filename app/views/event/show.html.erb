@@ -2,8 +2,8 @@
   <h2><%= @tournament.name %>キューブ会</h2>
   <dl>
     <dt>日時</dt><dd><%= @tournament.date %></dd>
-    <dt>場所</dt><dd><%= @event.place %></dd>
-    <dt>参加者</dt><dd><%= @event.member %></dd>
+    <dt>場所</dt><dd><%= @tournament.place %></dd>
+    <dt>参加者</dt><dd><%= @tournament.member %></dd>
     <dt>開催内容</dt>
     <dd>
     <% @winners.each do |winner| %>
@@ -20,6 +20,6 @@
       </p>
     <% end %>
     </dd>
-    <dt>備考</dt><dd><%= @event.remarks %></dd>
+    <dt>備考</dt><dd><%= @tournament.remarks %></dd>
   </dl>
 </div>

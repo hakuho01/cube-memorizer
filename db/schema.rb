@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_11_105548) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_12_053240) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -26,15 +26,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_11_105548) do
     t.integer "use_quantity"
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string "place"
-    t.string "member"
-    t.string "remarks"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer "tournament_id"
-  end
-
   create_table "tournament_types", force: :cascade do |t|
     t.string "tournament_type_ja"
     t.datetime "created_at"
@@ -46,6 +37,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_11_105548) do
     t.datetime "updated_at"
     t.date "date"
     t.string "name"
+    t.string "place"
+    t.string "member"
+    t.string "remarks"
   end
 
   create_table "winners", force: :cascade do |t|
